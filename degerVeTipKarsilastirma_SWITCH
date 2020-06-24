@@ -1,0 +1,56 @@
+/***********SWITCH************************/
+
+function Gun() {
+  /*  var deger = document.getElementById('dayBox').value;
+    alert(typeof(deger));*/
+
+    var sayfadanAlinan = document.getElementById('dayBox').value;
+  var donusturulen=parseInt(sayfadanAlinan);
+  
+  parseInt --> stringi integer'a çevirir
+  
+  /*
+    switch (donusturulen) {
+        case 1:
+            alert("Pazartesi");
+            break;
+        case 2:
+            alert("Salı");
+            break;
+        case 3:
+            alert("Çarşamba");
+            break;
+        case 4:
+            alert("Perşembe");
+            break;
+        case 5:
+            alert("Cuma");
+            break;
+        case 6:
+            alert("Cumartesi");
+            break;
+        case 7:
+            alert("Pazar");
+            break;
+        default:alert("Geçersiz değer");
+            break;
+    }*/
+
+
+    switch (donusturulen) {
+        case 1: 
+        case 2: 
+        case 3: 
+        case 4: 
+        case 5:
+            alert("Hafta içi");
+            break;
+        case 6: 
+        case 7:
+            alert("Hafta Sonu");
+            break;
+        default:
+            alert("Geçersiz değer");
+            break;
+    }
+}
