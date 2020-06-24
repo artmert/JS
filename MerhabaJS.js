@@ -1,4 +1,5 @@
 /*Yorum satırı*/
+DEneme bir ik üç
 /*
 var a=5; //satır içi yorumlama
 
