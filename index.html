@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <script src="MerhabaJS.js" ></script>
+
+</head>
+<body>
+    <style>
+        #container{
+            width: 400px;
+            height: 400px;
+            position: relative;
+            background: yellow;
+        }
+        #animasyon{
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            background: blue;
+    
+        }
+    </style>
+    <p>
+<button onclick="hareketEt()">Harekete Başla</button> 
+    </p>
+<div id="container">
+    <div id="animasyon">
+
+    </div>
+</div>
+
+<hr>
+
+<input type="text" id="sayi1" >
+<input type="text" id="sayi2" >
+<p id="result"></p>
+<button onclick="karsilastir()">Karşılaştır</button>
+<hr>
+
+<input type="number" id="puan">
+<button onclick="Sorgula()">Sorgula</button>
+
+<hr>
+<input type="number" id="dayBox">
+<button onclick="Gun()">Hangi gün?</button>
+</body>
+</html>
