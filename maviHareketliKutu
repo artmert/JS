@@ -1,0 +1,17 @@
+function hareketEt() {
+    //butonu disabled et
+    var maviKutu = document.getElementById('animasyon');
+    //console.log(maviKutu);
+    var pos = 0;
+    var id = setInterval(frame, 50);
+    console.log(id);
+    function frame() {
+        if (pos == 350) {
+            clearInterval(id);
+        } else {
+            pos++;//pos=pos+1;
+            //pos+=1;
+            maviKutu.style.top = pos + 'px';// 5px
+            maviKutu.style.left = pos + 'px';
+        }
+    }
