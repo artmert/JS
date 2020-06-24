@@ -1,0 +1,22 @@
+//BEST PRACTICE! --> bu tip fonksiyonlarda doğru olma olasılığı yüksek olanı yukarı yazarsan performans artar çünkü aşağdaki hiçbirşeye artık bakmasına gerek kalmaz
+
+function Sorgula() {
+    var puan = document.getElementById('puan').value;
+    var message;
+    if (puan >= 0 && puan < 45) { // && işareti ve anlamında
+        message = "ZAYIF";
+    } else if (puan >= 45 && puan < 55) {
+        message = "GEÇER";
+    } else if (puan >= 55 && puan < 70) {
+        message = "ORTA";
+    } else if (puan >= 70 && puan < 85) {
+        message = "İYİ";
+    } else if (puan >= 85 && puan <= 100) {
+        message = "PEKİYİ";
+    } else {
+        message = "Geçersiz";
+    }
+
+    var result = "Öğrenci sınavdan " + message + " notunu almıştır."
+    alert(result);
+}
