@@ -1,0 +1,15 @@
+function karsilastir() {
+    var sayi1 = document.getElementById('sayi1').value;
+    var sayi2 = document.getElementById('sayi2').value;
+    var sonuc = sayi1 > sayi2;
+    // alert(sonuc);
+    var resultBox = document.getElementById('result');
+    if (sayi1 > sayi2) {
+        //document.write("Sayı1 , sayı2 den büyük");
+        resultBox.innerHTML = "Sayı1 , sayı2 den <strong>büyük</strong>";
+    } else {
+        //document.write("Sayı2 , sayı1 den büyük");
+        resultBox.innerText = "Sayı2 , sayı1 den büyük";
+
+    }
+}
